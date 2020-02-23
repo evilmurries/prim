@@ -21,27 +21,37 @@ class Edge {
     int vertA;
     int vertB;
     int weight;
+    bool usageFlag;
 
 public:
     /*
-     * This function is the initializer for class Edge.
+     * This method is an initializer for class Edge.
      */
-    void init(int begin, int end, int edgeWeight) {
-        vertA = begin;
-        vertB = end;
-        weight = edgeWeight;
-    }
-
-    void init2(int* edgeArray) {
+    void init(int* edgeArray) {
         vertA = edgeArray[0];
         vertB = edgeArray[1];
         weight = edgeArray[2];
+        usageFlag = false;
     }
 
 public:
-    // This function returns the weight for the edge.
+    // This method returns the weight for the edge.
     int getWeight() {
         return weight;
+    }
+
+    /*
+     * This method sets the inMST bool to true.
+     */
+    void addToMST() {
+        usageFlag = true;
+    }
+
+    /*
+     * Returns whether the edge is in the MST already or not.
+     */
+    bool isUsedAlready() {
+        return usageFlag;
     }
 
     // This function returns the first terminating Vertex.
@@ -66,6 +76,8 @@ public:
  */
 class Vertex {
     int vertexNum;
+    int edgeCount;
+    bool visited = false;
     vector<Edge> connectedEdges;
 
 public:
@@ -78,10 +90,34 @@ public:
     }
 
     /*
+     * This method returns a boolean representing the visited status of the
+     * Vertex.
+     */
+    bool wasVisited() {
+        return visited;
+    }
+
+    /*
+     * This method receives a boolean and sets that as the wasVisited status
+     * for the Vertex.
+     */
+    void setVisited() {
+        visited = true;
+    }
+
+    /*
+     * This method returns the edges connected to the Vertex.
+     */
+    vector<Edge> getEdges() {
+        return connectedEdges;
+    }
+
+    /*
      * This method receives an edge and stores it within the vertex object.
      */
     void addEdge(Edge e) {
         connectedEdges.push_back(e);
+        edgeCount++;
     }
     /*
      * This method returns the integer name of the Vertex.
@@ -115,8 +151,10 @@ int main() {
     int startingVertex;
     int vertCount;
     int edgeCount;
+    Vertex workingNode;
     vector<Edge> edges;
     vector<Vertex> vertices;
+    vector<Edge> MST;
 
     string filename;
     ifstream file;
@@ -155,7 +193,7 @@ int main() {
                 j++;
             }
             Edge newEdge;
-            newEdge.init2(edgeInfo);
+            newEdge.init(edgeInfo);
             edges.push_back(newEdge);
         }
     } else {
@@ -172,6 +210,49 @@ int main() {
                 vertices[i].addEdge(edges[j]);
             }
         }
+    }
+    // Implement Prim's algorithm
+    int visitedNodes = 0;
+    int currentNode = startingVertex - 1;
+    while (visitedNodes < vertCount - 1) {
+        visitedNodes++;
+        int minWeight = 100000;
+        Vertex nodeCandidate;
+        vector<Edge> nodeEdges = vertices[currentNode].getEdges();
+        Edge edgeCandidate;
+
+        // examine each edge
+        for (auto & edge : edges) {
+            // if the edge is not used, and the weight is lowest thus far,
+            // record the edge and accompanying vertex details
+            Vertex start = vertices[edge.getStart() - 1];
+            Vertex end = vertices[edge.getEnd() - 1];
+            Vertex destination;
+
+            if (start.getVNum() == vertices[currentNode].getVNum() || end.getVNum() == vertices[currentNode].getVNum()) {
+                if (end.getVNum() == vertices[currentNode].getVNum()) {
+                    destination = start;
+                } else {
+                    destination = end;
+                }
+                // destination cannot be already visited, edge has to be the minimum thus far, and not used.
+                if (!destination.wasVisited() && (edge.getWeight() < minWeight) && !edge.isUsedAlready()) {
+                    minWeight = edge.getWeight();
+                    edgeCandidate = edge;
+                    nodeCandidate = destination;
+                }
+            }
+        }
+
+        // Lowest weight edge found. Record data.
+        vertices[currentNode].setVisited();
+        MST.push_back(edgeCandidate);
+        edgeCandidate.addToMST();
+        cout << "New edge: " << edgeCandidate.getStart() << ",";
+        cout << edgeCandidate.getEnd() << " - cost ";
+        cout << edgeCandidate.getWeight() << endl;
+        edgeCandidate.addToMST();
+        currentNode = nodeCandidate.getVNum() - 1;
     }
 
     return 0;
