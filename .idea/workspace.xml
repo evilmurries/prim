@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="prim_lion" targetName="prim_lion" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="da032a33-e978-4fcf-a5a5-8d226ce57ba0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1YBHHCC7cKeXa7fJUWjxoJOn6Cf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-debug/CMakeFiles" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cpiwa\Dropbox\CSUMB\cst370_algo\week8\prim_lion\cmake-build-debug\CMakeFiles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="prim_lion" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="prim_lion" TARGET_NAME="prim_lion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="prim_lion" RUN_TARGET_NAME="prim_lion">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da032a33-e978-4fcf-a5a5-8d226ce57ba0" name="Default Changelist" comment="" />
+      <created>1582408976328</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582408976328</updated>
+      <workItem from="1582408977599" duration="38000" />
+      <workItem from="1582409032611" duration="28000" />
+      <workItem from="1582412993731" duration="6401000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="427" y="441" key="FileChooserDialogImpl" timestamp="1582413147691">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="427" y="441" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1582413147691" />
+    <state width="1248" height="398" key="GridCell.Tab.0.bottom" timestamp="1582487555676">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1248" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582487555676" />
+    <state width="1248" height="398" key="GridCell.Tab.0.center" timestamp="1582487555676">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1248" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582487555676" />
+    <state width="1248" height="398" key="GridCell.Tab.0.left" timestamp="1582487555676">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1248" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582487555676" />
+    <state width="1248" height="398" key="GridCell.Tab.0.right" timestamp="1582487555676">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1248" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582487555676" />
+    <state x="148" y="342" key="SettingsEditor" timestamp="1582413215233">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="148" y="342" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1582413215233" />
+    <state x="343" y="523" key="com.intellij.ide.util.TipDialog" timestamp="1582409040110">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="343" y="523" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1582409040110" />
+  </component>
+</project>
