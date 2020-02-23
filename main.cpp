@@ -65,15 +65,27 @@ public:
  * One object of class Vertex represents a Vertex on a graph G.
  */
 class Vertex {
-    int edgeCount;
     int vertexNum;
     vector<Edge> connectedEdges;
 
 public:
+
+    /*
+     * This method initializes a new Vertex object.
+     */
     void init(int name) {
         vertexNum = name;
     }
 
+    /*
+     * This method receives an edge and stores it within the vertex object.
+     */
+    void addEdge(Edge e) {
+        connectedEdges.push_back(e);
+    }
+    /*
+     * This method returns the integer name of the Vertex.
+     */
     int getVNum() {
         return vertexNum;
     }
@@ -83,16 +95,21 @@ public:
      * on the digraph. Primarily used for debugging.
      */
     void printConnectedEdges() {
-        if (edgeCount == 0) {
-            return;
-        }
-        for (int i = 0; i < edgeCount; i++) {
+//        if (connectedEdges.size() == 0) {
+//            return;
+//        }
+        cout << "Vertex: " << getVNum();
+        cout << endl;
+        for (int i = 0; i < connectedEdges.size(); i++) {
             connectedEdges[i].printEdge();
         }
         cout << endl;
     }
 };
 
+/*
+ * Function main governs the general operation of prim.cpp
+ */
 int main() {
 
     int startingVertex;
@@ -119,7 +136,7 @@ int main() {
 
         for (int i = 0; i < vertCount; i++) {
             Vertex newNode;
-            newNode.init(i);
+            newNode.init(i + 1);
             vertices.push_back(newNode);
         }
 
@@ -147,15 +164,15 @@ int main() {
     }
     file.close();
 
+    // Link edges to vertices
     for (int i = 0; i < vertices.size(); i++) {
-        cout << vertices[i].getVNum() << " ";
+        for (int j = 0; j < edges.size(); j++) {
+            if (vertices[i].getVNum() == edges[j].getStart() ||
+            vertices[i].getVNum() == edges[j].getEnd()) {
+                vertices[i].addEdge(edges[j]);
+            }
+        }
     }
-    cout << endl;
-
-    for (int i = 0; i < edges.size(); i++) {
-        edges[i].printEdge();
-    }
-    cout << endl;
 
     return 0;
 }

@@ -11,7 +11,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da032a33-e978-4fcf-a5a5-8d226ce57ba0" name="Default Changelist" comment="" />
+    <list default="true" id="da032a33-e978-4fcf-a5a5-8d226ce57ba0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/prim_lion.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/prim_lion.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/prim_lion.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/prim_lion.dir/vc140.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/prim_lion.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/prim_lion.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/prim_lion.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/prim_lion.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/prim_lion.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/prim_lion.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +30,11 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YBHHCC7cKeXa7fJUWjxoJOn6Cf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,6 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-debug/CMakeFiles" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
@@ -57,7 +71,7 @@
       <updated>1582408976328</updated>
       <workItem from="1582408977599" duration="38000" />
       <workItem from="1582409032611" duration="28000" />
-      <workItem from="1582412993731" duration="6401000" />
+      <workItem from="1582412993731" duration="8178000" />
     </task>
     <servers />
   </component>
@@ -69,22 +83,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="427" y="441" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1582413147691" />
-    <state width="1248" height="398" key="GridCell.Tab.0.bottom" timestamp="1582487555676">
+    <state width="1248" height="398" key="GridCell.Tab.0.bottom" timestamp="1582489283973">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1248" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582487555676" />
-    <state width="1248" height="398" key="GridCell.Tab.0.center" timestamp="1582487555676">
+    <state width="1248" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1582489283973" />
+    <state width="1248" height="398" key="GridCell.Tab.0.center" timestamp="1582489283973">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1248" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582487555676" />
-    <state width="1248" height="398" key="GridCell.Tab.0.left" timestamp="1582487555676">
+    <state width="1248" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1582489283973" />
+    <state width="1248" height="398" key="GridCell.Tab.0.left" timestamp="1582489283973">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1248" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582487555676" />
-    <state width="1248" height="398" key="GridCell.Tab.0.right" timestamp="1582487555676">
+    <state width="1248" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1582489283973" />
+    <state width="1248" height="398" key="GridCell.Tab.0.right" timestamp="1582489283973">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1248" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582487555676" />
+    <state width="1248" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1582489283973" />
     <state x="148" y="342" key="SettingsEditor" timestamp="1582413215233">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
